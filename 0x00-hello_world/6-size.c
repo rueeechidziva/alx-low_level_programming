@@ -1,20 +1,33 @@
 #include <stdio.h>
+#include <conio.h>
 
 /**
- * main - Entry point
+ * main-"Print the size of various types on computer it is compiled on"
  *
  * Return: Always 0 (Success)
  */
-int main(void)
-{char a = 'A';           
-int b = 120;
-float c = 123.0f;
-double d = 1222.90;
-char str[] = "Hello";
-printf("\nSize of a: %d", sizeof(a));
-printf("\nSize of b: %d", sizeof(b));
-printf("\nSize of c: %d", sizeof(c));
-printf("\nSize of d: %d", sizeof(d));
-printf("\nSize of str: %d", sizeof(str));
+main()
+
+clrscr();
+printf("    short int is %2d bytes \n", sizeof(short int));
+printf("          int is %2d bytes \n", sizeof(int));
+printf("        int * is %2d bytes \n", sizeof(int *));
+printf("     long int is %2d bytes \n", sizeof(long int));
+printf("   long int * is %2d bytes \n", sizeof(long int *));
+printf("   signed int is %2d bytes \n", sizeof(signed int));
+printf(" unsigned int is %2d bytes \n", sizeof(unsigned int));
+printf("\n");
+printf("        float is %2d bytes \n", sizeof(float));
+printf("      float * is %2d bytes \n", sizeof(float *));
+printf("       double is %2d bytes \n", sizeof(double));
+printf("     double * is %2d bytes \n", sizeof(double *));
+printf("  long double is %2d bytes \n", sizeof(long double));
+printf("\n");
+printf("  signed char is %2d bytes \n", sizeof(signed char));
+printf("         char is %2d bytes \n", sizeof(char));
+printf("       char * is %2d bytes \n", sizeof(char *));
+printf("unsigned char is %2d bytes \n", sizeof(unsigned char));
+getch();
+
 return (0);
 }
