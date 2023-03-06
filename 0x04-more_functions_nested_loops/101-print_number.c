@@ -40,7 +40,7 @@ void print_number(int n)
 	while (j >= 1)
 	{
 		numchar = (temp / j) % 10;
-		_putchar(numchar + '0');
+		putchar(numchar + '0');
 		j = j / 10;
 	}
 }
